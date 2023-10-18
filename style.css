@@ -88,3 +88,25 @@ table{
     padding-right: 30px;
     padding-bottom: 30px;
 }
+
+.para2{
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 25px;
+    }
+
+.link1:hover {
+color: red;
+border: 2px solid black;
+}
+
+.link2:visited{
+background-color: gray;
+}
+
+.link3:active{
+background-color: orange;
+}
+
