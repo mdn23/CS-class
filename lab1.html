@@ -151,5 +151,17 @@ I was 11 and I was finally able to buy one. They're loud and fast.</p>
 
 </script>
 
+<button id="changeTextBtn">Button</button>
+<p id="displayText">Before</p>
+
+<script>
+  var button = document.getElementById("changeTextBtn");
+  var paragraph = document.getElementById("displayText");
+
+  button.addEventListener("click", function() {
+      paragraph.textContent = "Hello, JavaScript World!";
+    });
+  </script>
+
 </body>
 </html>
