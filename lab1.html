@@ -163,5 +163,32 @@ I was 11 and I was finally able to buy one. They're loud and fast.</p>
     });
   </script>
 
+<form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      if (!username || !password) {
+        alert('Username and password are required.');
+      } else {
+        setTimeout(function() {
+          alert('Login successful!');
+        }, 3000);
+      }
+    });
+  </script>
+
 </body>
 </html>
